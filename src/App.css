@@ -1,38 +1,62 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+
+body {
+  background: #1C8EF9 !important;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  background: #eeeeee;
+  padding: 50px;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 9px 30px -10px rgba(140, 140, 140, 1);
+}
+
+.todo-content {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  margin: 4px 2px;
+  padding: 15px 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: #4CAF50;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.todo {
+  padding: 5px;
+  margin: 10px;
+  background: #cccccc;
+  border-radius: 10px;
+  box-shadow: 10px 9px 30px -10px rgba(140, 140, 140, 1);
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.control {
+  padding: 5px;
+  margin: 10px;
 }
