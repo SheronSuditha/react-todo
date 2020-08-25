@@ -1,4 +1,4 @@
 export const removetodo = (payload) => ({
-    type: "REMOVE_TODO",
-    payload
-})
+  type: "REMOVE_TODO",
+  payload,
+});

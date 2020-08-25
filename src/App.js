@@ -33,9 +33,6 @@ function App() {
         index: index,
       })
     );
-    /**
-     * send to remove todo
-     */
   };
 
   function uuid() {
